@@ -1,0 +1,84 @@
+body {
+  background-color: #3876bf;
+}
+.App {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border: 5px solid #e1aa74;
+  margin: 50px 30px;
+  padding: 25px 15px;
+}
+.heading {
+  text-align: center;
+  color: #e1aa74;
+  font-size: 40px;
+  font-weight: bold;
+}
+.to-do-container {
+  display: flex;
+  flex-direction: column;
+}
+.to-do-container ul li {
+  overflow-wrap: break-word;
+  font-size: 22px;
+  color: white;
+  list-style-type: "💁‍♂️";
+  cursor: pointer;
+  padding: 15px 0;
+}
+input {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 3px solid #e1aa74;
+}
+input:focus {
+  outline: none;
+}
+button {
+  padding: 25px;
+  margin-left: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  border: 3px solid #e1aa74;
+}
+@media (max-width: 1000px) {
+  button {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .App {
+    width: 100%;
+    border: none;
+  }
+}
+.done {
+  text-decoration: line-through;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete {
+  cursor: pointer;
+  font-size: 22px;
+}
